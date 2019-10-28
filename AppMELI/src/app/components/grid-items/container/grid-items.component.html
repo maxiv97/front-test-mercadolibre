@@ -1,0 +1,18 @@
+<div class="grid-items">
+    <navbar class="grid-items--navbar" (onSearch)="onSearch($event)"></navbar>
+    <div *ngIf="isItems" class="grid-items--results">
+        <div class="grid-items--results-categories">
+            <div *ngFor="let item of categories; index as i">
+                <p class="grid-items--results-categories-category">{{item}}
+                    <img *ngIf="isNotLastCategory(i)" class="grid-items--results-categories-image" src="https://ya-webdesign.com/images250_/arrow-head-png-1.png">
+                </p>
+            </div>
+        </div>
+        <div class="grid-items--results-items">
+            <item-detail *ngIf="isItemDetail"></item-detail>
+            <div *ngIf="!isItemDetail">
+                <item *ngFor="let item of items.items" [item]="item" (onItemClick)="onItemClick($event)"></item>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div *ngIf="item" class="item-detail">
+    <div class="item-detail--header">
+        <img class="item-detail--header-picture" [src]="item.picture">
+        <div class="item-detail--header-description">
+            <div class="item-detail--header-description-sold-quantity">
+                <p class="item-detail--header-description-sold-quantity-text">{{item.condition | conditionPipe}}</p>
+                <img class="item-detail--header-description-sold-quantity-image" src="https://ya-webdesign.com/images250_/arrow-head-png-1.png">
+                <p class="item-detail--header-description-sold-quantity-text">{{item.sold_quantity}} vendidos</p>
+            </div>
+            <p class="item-detail--header-description-title">{{item.title}}</p>
+            <label class="item-detail--header-description-price">
+                <span>{{item.price.currency | currencyPipe}} </span>
+                <span>{{item.price.amount | amountPipe}}, </span>
+                <span class="item-detail--header-description-price-decimals">
+                    {{item.price.decimals | decimalsPipe}}
+                </span>
+            </label>
+            <div class="item-detail--header-description-button">
+                <p class="item-detail--header-description-button-text">Comprar</p>
+            </div>
+        </div>
+    </div>
+    <div class="item-detail--footer">
+        <p class="item-detail--footer-title">Descripción del producto</p>
+        <p class="item-detail--footer-description">{{item.description}}</p>
+    </div>
+</div>

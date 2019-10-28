@@ -1,0 +1,46 @@
+.navbar {
+    margin: 0;
+    height: 55px;
+    width: 100vw;
+    background-color: #FFE600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &--container {
+        height: 40px;
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-logo {
+            margin-right: 32px;
+        }
+
+        &-search-box {
+            flex-grow: 1;
+            align-self: stretch;
+            display: flex;
+            justify-content: flex-end;
+            align-items: stretch;
+            background-color: white;
+
+            &-input {
+                border-width: 0;
+                border-color: transparent;
+                flex-grow: 1;
+                padding: 8px;
+                font-size: 18px;
+            }
+
+            &-btn {
+                width: 30px;
+                background-color: #EEEEEE;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

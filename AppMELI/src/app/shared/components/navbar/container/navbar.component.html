@@ -1,0 +1,11 @@
+<div class="navbar">
+    <div class="navbar--container">
+        <img class="navbar--container-logo" src="./assets/Logo_ML.png">
+        <div class="navbar--container-search-box">
+            <input #textInput (keyup.enter)="onSearchEvent()" class="navbar--container-search-box-input" placeholder="Nunca dejes de buscar">
+            <div class="navbar--container-search-box-btn">
+                <img class="navbar--container-search-box-btn-image" (click)="onSearchEvent()" src="./assets/ic_Search.png">
+            </div>
+        </div>
+    </div>
+</div>

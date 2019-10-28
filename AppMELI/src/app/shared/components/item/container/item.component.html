@@ -1,0 +1,16 @@
+<div class="item" (click)="onSearchEvent()">
+    <img class="item-image" [src]="item.picture">
+    <div class="item-description">
+        <div class="item-description-title">
+            <label class="item-description-title">
+                <span>{{item.price.currency | currencyPipe}} </span>
+                <span>{{item.price.amount | amountPipe}}, </span>
+                <span class="item-description-title-decimals">
+                    {{item.price.decimals | decimalsPipe}}
+                </span>
+            </label>
+            <img *ngIf="item.free_shipping" class="item-description-title-image" src="./assets/ic_shipping.png">
+        </div>
+        <label class="item-description-text">{{item.title}}</label>
+    </div>
+</div>

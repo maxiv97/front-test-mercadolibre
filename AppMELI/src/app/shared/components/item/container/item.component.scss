@@ -1,0 +1,41 @@
+.item {
+    display: flex;
+    border-bottom: 1px solid #EEEEEE;
+
+    /*
+        Nota: en el spec de esta vista, aclara que el tamaño de la imagen debería ser de 180px x 180px,
+        probando con esa medida se ven muy pixeladas las imágenes devueltas por la api. Por este
+        motivo decido dejarlo en 120px x 120px.
+    */
+    &-image {
+        width: 180px;
+        height: 180px;
+        margin: 16px;
+        border-radius: 4px;
+    }
+
+    &-description {
+        display: flex;
+        flex-direction: column;
+        color: #333333;
+        font-weight: 500;
+
+        &-title {
+            font-size: 24px;
+            margin: 32px 0;
+            &-decimals {
+                font-size: 15px;
+            }
+            &-image {
+                height: 18px;
+                width: 18px;
+                margin-left: 5px;
+            }
+        }
+
+        &-text {
+            font-size: 18px;
+        }
+    }
+
+}

@@ -1,0 +1,88 @@
+.item-detail {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &--header {
+        display: flex;
+        justify-content: flex-start;
+        &-picture {
+            margin: 32px;
+            width: 680px;
+            height: 680px;
+        }
+    
+        &-description {
+            display: flex;
+            flex-direction: column;
+            color: #333333;
+
+            &-sold-quantity {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-top: 32px;
+                font-size: 14px;
+                font-weight: 500;
+                &-image {
+                    align-self: center;
+                    margin: 0 5px;
+                    width: 8px;
+                    height: 8px;
+                }
+
+                &-text {
+                    margin: 0;
+                    align-self: center;
+                }
+            }
+
+            &-title {
+                font-size: 24px;
+                font-weight: 600;
+                margin-top: 16px;
+                margin-bottom: 32px;
+            }
+
+            &-price {
+                font-size: 46px;
+                font-weight: 500;
+                &-decimals {
+                    font-size: 26px;
+                }
+            }
+
+            &-button {
+                align-self: flex-start;
+                border-radius: 4px;
+                margin-top: 32px;
+                height: 48px;
+                width: 250px;
+                background-color: #3484FA;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &-text {
+                    color: white;
+                    font-weight: 500;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    &--footer {
+        &-title {
+            margin-left: 32px;
+            font-size: 28px;
+            color: #333333;
+        }
+
+        &-description {
+            margin: 32px;
+            font-size: 16px;
+            color: #999999;
+        }
+    }
+}
