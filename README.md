@@ -7,7 +7,7 @@
 
 ## Uso
 Una vez clonado el repositorio, se deberán ejecutar los comandos:
-- npm i @angular/cli
+- npm i -g @angular/cli
 - cd AppMELI
 - ng serve
 
